@@ -1,0 +1,29 @@
+From 963c9c8bbba7ebed5d7856c21d770a8bae6608a7 Mon Sep 17 00:00:00 2001
+From: tps <tps@Ubuntu.myguest.virtualbox.org>
+Date: Sun, 5 Apr 2026 11:12:03 -0400
+Subject: [PATCH] modified ldd3 makefile to only include scull and misc-modules
+
+---
+ Makefile | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 7b08c49..6900c13 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,8 +1,8 @@
+ 
+-SUBDIRS =  misc-progs misc-modules \
+-           skull scull scullc scullp lddbus sculld scullv shortprint simple tty \
+-	   pci usb\
+-	   sbull snull short
++SUBDIRS =  scull misc-modules \
++           #misc-progs skull scullc scullp lddbus sculld scullv shortprint simple tty \
++	   #pci usb\
++	   #sbull snull short
+ 
+ all: subdirs
+ 
+-- 
+2.34.1
+
