@@ -23,8 +23,6 @@ RPROVIDES:${PN} += "kernel-module-aeesdchar"
 RDEPENDS:${PN}:remove = "kernel-module-aesdchar-${KERNEL_VERSION}"
 RDEPENDS:${PN}:remove = "kernel-module-aesdchar"
 
-#KERNEL_MODULE_AUTOLOAD += "aesdchar"
-
 EXTRA_OEMAKE += "KERNELDIR=${STAGING_KERNEL_DIR}"
 EXTRA_OEMAKE:append:task-install = " -C ${STAGING_KERNEL_DIR} M=${S}"
 RPROVIDES:${PN} += "kernel-module-aesdchar"
