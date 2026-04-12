@@ -8,7 +8,7 @@ SRC_URI = "git://git@github.com/tps01/assignment3-and-later-tps01.git;protocol=s
 
 PV = "1.0+git${SRCPV}"
 # Set to reference a specific commit hash in your assignment repo
-SRCREV = "ebfef5e4920acaf07561eee6b72f1e55aff40fcb"
+SRCREV = "0a0791864765b12c3984533d23a14670ddb52494"
 
 # This sets your staging directory based on WORKDIR, where WORKDIR is defined at 
 # https://docs.yoctoproject.org/ref-manual/variables.html?highlight=workdir#term-WORKDIR
